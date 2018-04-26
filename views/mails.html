@@ -9,11 +9,16 @@
                     <tr>
                         <th scope="col">Summary</th>
                         <th scope="col">From email</th>
-                        <th scope="col"> Date</th>
+                        <th scope="col">Date</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="mail in $ctrl.mails">
+                    <tr ng-repeat="mail in $ctrl.mails"
+                        class="drag-mail"
+                        ng-drag="true"
+                        ng-drag-data="mail"
+                        ng-drag-success="$ctrl.onDragComplete($data, $event)"
+                        ng-center-anchor="true">
                         <td>{{ mail.summary }}</td>
                         <td>{{ mail.from }}</td>
                         <td>{{ mail.date }}</td>
@@ -24,7 +29,9 @@
 
         <div class="col-6">
             <h2>Technical support</h2>
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered table-striped"
+                   ng-drop="true"
+                   ng-drop-success="$ctrl.onDropComplete($data, $event, 'tech')">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Summary</th>
@@ -48,7 +55,9 @@
             </table>
 
             <h2>Marketing</h2>
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered table-striped"
+                   ng-drop="true"
+                   ng-drop-success="$ctrl.onDropComplete($data, $event, 'market')">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Summary</th>
@@ -72,7 +81,9 @@
             </table>
 
             <h2>CEO</h2>
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered table-striped"
+                   ng-drop="true"
+                   ng-drop-success="$ctrl.onDropComplete($data, $event, 'ceo')">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Summary</th>

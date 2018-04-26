@@ -1,11 +1,11 @@
 require('angular');
 require('@uirouter/angularjs');
 require('jquery');
-require('angular-drag-drop');
+require('popper.js');
 require('bootstrap');
-require('moment');
+require('hlfs-ng-draggable');
 
-angular.module('testTask', ['ui.router', 'filearts.dragDrop'], function () {});
+angular.module('testTask', ['ui.router', 'ngDraggable'], function () {});
 
 angular.module('testTask').config(function (
     $stateProvider,
