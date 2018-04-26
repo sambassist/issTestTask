@@ -1,0 +1,101 @@
+<h1 class="h1-string">Mails</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <h2>Unsorted</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Summary</th>
+                        <th scope="col">From email</th>
+                        <th scope="col"> Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="mail in $ctrl.mails">
+                        <td>{{ mail.summary }}</td>
+                        <td>{{ mail.from }}</td>
+                        <td>{{ mail.date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6">
+            <h2>Technical support</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Summary</th>
+                        <th scope="col">From email</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-if="$ctrl.techSupportList.length"
+                        ng-repeat="mail in $ctrl.techSupportList">
+                        <td>{{ mail.summary }}</td>
+                        <td>{{ mail.from }}</td>
+                        <td>{{ mail.date }}</td>
+                    </tr>
+                    <tr ng-if="!$ctrl.techSupportList.length">
+                        <td colspan="3" class="text-center">
+                            Drop first mail here
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Marketing</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Summary</th>
+                        <th scope="col">From email</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-if="$ctrl.marketingList.length"
+                        ng-repeat="mail in $ctrl.marketingList">
+                        <td>{{ mail.summary }}</td>
+                        <td>{{ mail.from }}</td>
+                        <td>{{ mail.date }}</td>
+                    </tr>
+                    <tr ng-if="!$ctrl.marketingList.length">
+                        <td colspan="3" class="text-center">
+                            Drop first mail here
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>CEO</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Summary</th>
+                        <th scope="col">From email</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-if="$ctrl.ceoList.length"
+                        ng-repeat="mail in $ctrl.ceoList">
+                        <td>{{ mail.summary }}</td>
+                        <td>{{ mail.from }}</td>
+                        <td>{{ mail.date }}</td>
+                    </tr>
+                    <tr ng-if="!$ctrl.ceoList.length">
+                        <td colspan="3" class="text-center">
+                            Drop first mail here
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>

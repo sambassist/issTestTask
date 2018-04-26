@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "summary": "mail 1",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "2",
+        "summary": "mail 2",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "3",
+        "summary": "mail 3",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "4",
+        "summary": "mail 4",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "5",
+        "summary": "mail 5",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "6",
+        "summary": "mail 6",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "7",
+        "summary": "mail 7",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "8",
+        "summary": "mail 8",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "9",
+        "summary": "mail 9",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "10",
+        "summary": "mail 10",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "11",
+        "summary": "mail 11",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    },
+    {
+        "id": "12",
+        "summary": "mail 12",
+        "from": "mail@somemail.mail",
+        "date": "12.04.2018"
+    }
+]
